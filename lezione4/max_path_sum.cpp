@@ -1,3 +1,14 @@
+// https://practice.geeksforgeeks.org/problems/maximum-path-sum/1
+
+/*
+This algorithm finds the largest path sum between two leaves in a tree.
+For every node we recursively compute the path with the largest sum from the node to any leaf in its left subtree and to any leaf in its right subtree;
+then we check if the path obtained by joining these two paths has a sum larger than the current maximum.
+The algorithm is correct because every path between two leaves is exactly of the type described: the union of two chains joined at the lower common ancestor of the leaves.
+
+The running time is O(n) beacause we are running a BSF on the tree, with a constant number of sums made at each node.
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 struct Node{

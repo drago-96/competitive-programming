@@ -1,7 +1,11 @@
+// https://practice.geeksforgeeks.org/problems/trapping-rain-water/0
+
 /*
 This algorithm solves the trapping rain water problem.
 Given the array A, it computes the maximums of the subarrays from the left and from the right, lmax and rmax.
-Then, for wach position, it computes the maximum amount of water as min(lmax[i],rmax[i])-A[i]
+Then, for each position, it computes the maximum amount of water as min(lmax[i],rmax[i])-A[i].
+
+The running time is O(n): each operation (read input, build lmax and rmax, compute the result) requires only to scan the array once.
 */
 
 #include <bits/stdc++.h>

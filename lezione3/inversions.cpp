@@ -1,13 +1,15 @@
+// https://www.spoj.com/problems/INVCNT/
+
+/*
+This algorithm counts the number of inversions of an array.
+We use the divide and conquer strategy: we sort the array using merge sort, increasing a counter each time we have an inversion in the merging step.
+
+The running time is O(n*logn), the same of merge sort: we only double the number of operations in every merge step.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
-
-void print(int *A, int N) {
-    for(int i=0;i<N;i++) {
-        cout << A[i] << " ";
-    }
-    cout << endl;
-}
 
 long merge_sort(int *A, int l, int r) {
     if (l==r) return 0;

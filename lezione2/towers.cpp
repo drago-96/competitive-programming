@@ -1,3 +1,11 @@
+// http://codeforces.com/problemset/problem/37/A?locale=en
+
+/*
+This algorithm counts the number of different towers and the maximum height.
+Since the possible sizes are limited, we keep an array which counts how many pieces of given size we have available.
+We then compute the two quantities in linear time.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

@@ -2,7 +2,9 @@
 
 /*
 This program finds the maximum possible strengths of teams.
-We use a greedy algorithm: we sort the strengths and starting from the highest we pair the two teams, if they are not already paired.
+We use a greedy algorithm: we sort the strengths of all n^2 possible teams and starting from the highest we pair the two players, if they are available.
+
+The running time is O(n^2*logn); sorting the teams is O(n^2*log(n^2)), and all the other operations are linear in n^2.
 */
 
 #include <bits/stdc++.h>

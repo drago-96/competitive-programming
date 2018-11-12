@@ -1,5 +1,10 @@
+// https://practice.geeksforgeeks.org/problems/missing-number-in-array/0
+
 /*
-This algorithm finds the missing number in the array [1..N]
+This algorithm finds the missing number in the array [1..N].
+We know that the sum 1+2+...+N=N*(N+1)/2, so we obtain the missing number by subtracting the sum of the array to this number.
+
+The running time is O(n).
 */
 
 #include <bits/stdc++.h>

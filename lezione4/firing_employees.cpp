@@ -1,3 +1,13 @@
+// https://practice.geeksforgeeks.org/problems/firing-employees/0
+
+/*
+Our algorithm builds the tree of the society and computes the number of ancestors of each node (stored in the array seniors) with a BFS.
+Then for each node we check if the sum of its rank and its number is a prime number with the O(sqrt(n)) algorithm.
+
+The running time is then O(n*sqrt(n)).
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;

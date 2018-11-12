@@ -1,7 +1,11 @@
+// https://practice.geeksforgeeks.org/problems/leaders-in-an-array/0
+
 /*
 This algorithm prints all the right leaders of an array, i.e. the elements which are greater than or equal to all the elements to their right.
 It simply scans the array backwards, updating the maximum value of the range [i..n].
-An element is a right leader if and only if A[i]=max( A[j], j={i..n} )
+An element is a right leader if and only if A[i]=max( A[j], j={i..n} ).
+
+The running time is then O(n).
 */
 
 #include <bits/stdc++.h>

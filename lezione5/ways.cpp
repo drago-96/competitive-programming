@@ -1,5 +1,15 @@
 // http://codeforces.com/problemset/problem/466/C?locale=en
 
+/*
+This algorithm finds the number of indexes i<j such that sum(A[1..i])=sum(A[i..j])=sum(A[j..n]).
+We first compute the total sum S of the array; if it's not multiple of 3, there exist 0 couples.
+Then we create the array which has 1 in position i if sum(A[i..n])=S/3, and then its prefix sum back.
+Last, for each prefix A[1..i] with sum equal to S/3, we add to the total answer the number back[i+2]:
+ for each i we are adding the number of j's such that A[j..n]=S/3; in this way, also the segment A[i..j] has sum S/3.
+
+The running time is O(n): we only scan the array backwards and forwards.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

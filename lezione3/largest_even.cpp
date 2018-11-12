@@ -1,3 +1,13 @@
+// https://practice.geeksforgeeks.org/problems/largest-even-number/0
+
+/*
+This algorithm finds the largest even number that can be formed with given digits.
+First we count how may digits of every type we have available.
+Then we look for the lowest even digit we can use, and put it as the last digit of the result.
+Then we append digits at the left of our number in increasing order: by the rearrangement inequality this is the biggest number we can form.
+
+The running time is linear in the number of digits of the input.
+*/
 #include <bits/stdc++.h>
 
 using namespace std;

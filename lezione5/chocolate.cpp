@@ -1,5 +1,13 @@
 // http://codeforces.com/problemset/problem/6/C?locale=en
 
+/*
+Our algorithm simulates the game from Alice perspective:
+we eat all the chocolate up to the mid one, then we check who is going to eat the mid one.
+
+The running time is O(N), where N is the number of pieces.
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
