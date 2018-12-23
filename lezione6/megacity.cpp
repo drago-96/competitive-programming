@@ -1,5 +1,15 @@
 // http://codeforces.com/problemset/problem/424/B?locale=en
 
+/*
+We need to find the minumum radius r such that there are at least one million people in the cities in the closed ball of radius r.
+So for each city we compute its distance to the origin and then we sort the cities by increasing distance.
+We begin summing the population of the cities from the closest one to the furthest one.
+When we reach at least 1M, we stop and print the distance of the last processed city.
+
+Time complexity i O(n*logn), given by the sorting; the rest of the program is O(n).
+
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
