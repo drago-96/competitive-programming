@@ -1,5 +1,11 @@
 // https://practice.geeksforgeeks.org/problems/check-for-bst/1
 
+/*
+To see if a tree is a BST, we recursively check that each node is greater than all the nodes on its left subtree, and smaller than all the nodes on its right subtree.
+
+The running time is O(n), beacause we check each node exactly once.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 /* A binary tree node has data, pointer to left child

@@ -1,4 +1,5 @@
 // http://codeforces.com/problemset/problem/276/C?locale=en
+
 /*
 Our algorithm computes the largest sum we can obtain by querying an array with fixed element and known queries.
 Starting from a zero array, for every query (a,b) we increase by 1 the element at position a, and decrease by 1 the element at position b.
