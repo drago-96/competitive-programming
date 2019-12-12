@@ -1,5 +1,6 @@
 *
 
 !.gitignore
+!todolist.md
 !*.cpp
 !*/

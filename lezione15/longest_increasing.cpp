@@ -6,7 +6,7 @@ We use the "DP" solution seen at lecture: we save for each position the maximum 
 Running time is O(n^2); memory is O(n).
 */
 
-// TODO: maybe implement the n*logn solution at https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+// IDEA: maybe implement the n*logn solution at https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
 
 #include <bits/stdc++.h>
 

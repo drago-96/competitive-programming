@@ -30,7 +30,7 @@ using namespace std;
 //     return cache[i][j] = max(LPS(i+1,j),LPS(i,j-1));
 // }
 
-// TODO: scrivere LPS senza usare LCS
+// FIXME: scrivere LPS senza usare LCS
 
 int LCS(string s1, string s2) {
     int n1,n2;
