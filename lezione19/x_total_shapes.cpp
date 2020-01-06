@@ -1,6 +1,11 @@
 // https://practice.geeksforgeeks.org/problems/x-total-shapes/0
 
-// TODO: write explanation and submit to online judge
+/*
+We need to find the connected components on the graph having by nodes the X's and edges the horizontal and vertical neighbors.
+
+Running time is linear on the number of X's, iO(N*M)
+*/
+
 
 #include <bits/stdc++.h>
 
@@ -43,11 +48,7 @@ int main() {
       }
     }
     cout << CC << endl;
-
-
   }
-
-
 
   return 0;
 }

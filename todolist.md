@@ -86,8 +86,8 @@
  * TODO: Queue
 
 ## Lezione 19
- * TODO: X total shapes
- * TODO: IsBipartite
+ * DONE: X total shapes
+ * DONE: IsBipartite
  * TODO: Fox and names
 
 ## Lezione 20
