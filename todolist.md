@@ -47,7 +47,7 @@
  * DONE: Circular RMQ
 
 ## Lezione 11
- * TODO: Powerful array
+ * DONE: Powerful array
  * TODO: Tree and queries
 
 ## Lezione 12
