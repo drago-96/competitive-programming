@@ -38,10 +38,10 @@
 
 ## Lezione 8
  * DONE: Pashmak and Parmida's problem
- * TODO: Nested segments
+ * DONE: Nested segments
 
 ## Lezione 9
- * TODO: Nested segments with segtree
+ * DONE: Nested segments with segtree
 
 ## Lezione 10
  * DONE: Circular RMQ
