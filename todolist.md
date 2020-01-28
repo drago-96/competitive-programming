@@ -72,7 +72,7 @@
 
 ## Lezione 16
  * DONE: Longest palindromic subsequence
- * TODO: Vertex cover
+ * DONE: Vertex cover
 
 ## Lezione 17
  * DONE: N meetings in one room
@@ -83,12 +83,12 @@
 ## Lezione 18
  * DONE: Lexicographically maximum subsequence
  * DONE: Woodcutters
- * TODO: Queue
+ * DONE: Queue
 
 ## Lezione 19
  * DONE: X total shapes
  * DONE: IsBipartite
- * TODO: Fox and names
+ * DONE: Fox and names
 
 ## Lezione 20
  * DONE: Learning languages
