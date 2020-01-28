@@ -48,7 +48,7 @@
 
 ## Lezione 11
  * DONE: Powerful array
- * TODO: Tree and queries
+ * DONE: Tree and queries
 
 ## Lezione 12
  * MAYBE: QTREE
@@ -91,7 +91,7 @@
  * TODO: Fox and names
 
 ## Lezione 20
- * TODO: Learning languages
+ * DONE: Learning languages
  * TODO: Checkposts
 
 ## Lezione 21
