@@ -92,7 +92,7 @@
 
 ## Lezione 20
  * DONE: Learning languages
- * TODO: Checkposts
+ * DONE: Checkposts
 
 ## Lezione 21
- * TODO: Minumum spanning tree
+ * DONE: Minumum spanning tree
