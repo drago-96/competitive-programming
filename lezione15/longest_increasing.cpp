@@ -6,13 +6,25 @@ We use the "DP" solution seen at lecture: we save for each position the maximum 
 Running time is O(n^2); memory is O(n).
 */
 
-// IDEA: maybe implement the n*logn solution at https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
-
 #include <bits/stdc++.h>
 
 using namespace std;
 
+// This is the n*logn solution at https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
 int LIS(vector<int> A) {
+    int n = A.size();
+    vector<int> dp(n+1, INT_MAX);
+    dp[0] = INT_MIN;
+    for (int i=0;i<n;i++) {
+        auto j = upper_bound(dp.begin(), dp.end(), A[i]);
+        if (*prev(j)<A[i] && A[i]<*j) *j = A[i];
+    }
+    auto last = upper_bound(dp.begin(), dp.end(), INT_MAX-1);
+    return prev(last)-dp.begin();
+}
+
+// This is the n^2 DP seen in class
+int LIS_slow(vector<int> A) {
     vector<int> cache(A.size(),0);
     int mmax = 0;
     for (size_t i=0;i<A.size();i++) {

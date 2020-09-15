@@ -10,27 +10,25 @@ Running time is O(n^2).
 
 using namespace std;
 
-// int cache[1000][1000];
-// string s;
-//
-// void reset_cache(int n) {
-//     for (int i=0;i<n;i++) {
-//         for (int j=0;j<n;j++) {
-//             cache[i][j] = -1;
-//         }
-//     }
-// }
+int cache[1000][1000];
+string s;
 
-// int LPS(int i, int j) {
-//     if (i>=s.length() || j>=s.length()) return 0;
-//     if (i>j) return 0;
-//     if (i==j) return 1;
-//     if (cache[i][j] != -1) return cache[i][j];
-//     if (s[i]==s[j]) return cache[i][j] = LPS(i+1,j-1)+2;
-//     return cache[i][j] = max(LPS(i+1,j),LPS(i,j-1));
-// }
+void reset_cache(int n) {
+    for (int i=0;i<n;i++) {
+        for (int j=0;j<n;j++) {
+            cache[i][j] = -1;
+        }
+    }
+}
 
-// FIXME: scrivere LPS senza usare LCS
+int LPS(int i, int j) {
+    if (i>=s.length() || j>=s.length()) return 0;
+    if (i>j) return 0;
+    if (i==j) return 1;
+    if (cache[i][j] != -1) return cache[i][j];
+    if (s[i]==s[j]) return cache[i][j] = LPS(i+1,j-1)+2;
+    return cache[i][j] = max(LPS(i+1,j),LPS(i,j-1));
+}
 
 int LCS(string s1, string s2) {
     int n1,n2;
@@ -54,13 +52,17 @@ int LCS(string s1, string s2) {
 
 int main() {
     int T;
-    string s;
     cin >> T;
     for(int i=0;i<T;i++) {
         cin >> s;
-        string s2;
-        s2.assign(s.rbegin(),s.rend());
-        cout << LCS(s,s2) << endl;
+
+        reset_cache(s.length()+1);
+        cout << LPS(0, s.length()-1) << endl;
+
+        // string s2;
+        // s2.assign(s.rbegin(),s.rend());
+        // cout << LCS(s,s2) << endl;
+
     }
 
     return 0;
